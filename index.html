@@ -37,9 +37,9 @@
           <tr>
             <!-- used bootstrap table-bordered, removed a column since the example only has 3 -->
             <!-- scope is an attr that specifies whether its a header cell for a row column or group of rows or columns, in this case it is columns TODO: have it hidden in the css -->
-            <th scope="col">Time</th>
-            <th scope="col">Event</th>
-            <th scope="col">Add to Calendar</th>
+            <th scope="col" class="colTitle">Time</th>
+            <th scope="col" class="colTitle">Event</th>
+            <th scope="col" class="colTitle">Add to Calendar</th>
           </tr>
         </thead>
         <!-- tbody aka table body -->
@@ -113,6 +113,7 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>
 
@@ -120,8 +121,10 @@
 <!-- the time blocks need to start at 9am, and end at 5pm. best way to make the transition from 12 pm to 1 pm would be to use a 24 hour clock. -->
 
 <!-- TODO: current day displayed at top of calendar-- so in the header? -->
-<!-- TODO: upon scroll down (scroll event?) presented with blocks by the hour from 9am to 5pm -->
-<!-- TODO: color code time blocks: past, present, and future -->
+<!-- upon scroll down (scroll event?) presented with blocks by the hour from 9am to 5pm-- mostly sure I've done this now -->
+<!-- TODO: color code time blocks: past (grey), present(red), and future(green??? that isn't colorblind friendly. pick something else) -->
 <!-- TODO:  clicking a time block allows the user to input an event-->
-<!-- TODO: save events that are entered from user input in local storage -->
+<!-- TODO: save events that are entered from user input in local storage, submit button? -->
 <!-- TODO: events are still on the page when the page is refreshed -->
+
+<!-- TODO: we are prompted to use moment.js. here is the layout for formatted dates -----moment().format('MMM Do YYY, h:mm:ss a'); this one is, for example July 3rd, 2022, 10:40:46 pm-->
