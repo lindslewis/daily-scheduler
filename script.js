@@ -8,10 +8,15 @@
 //  $("#currentDay").text(current);
 // console.log(today)
 
+// var today = document.getElementById("#currentDay");
+// moment().format("dddd, MMMM Do YYYY");
+//     console.log()
+
+
+// WOOOOO. IT WORKS. 
+// note to self, always check to make sure your jquery is linked.... will style later.
 var today = moment();
-("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
-
-
+$("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
 
 
 
