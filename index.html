@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- moment below -->
+    <script
+    type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"
+  ></script>
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
@@ -26,6 +32,7 @@
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- below is the clock bit -->
       <p id="currentDay" class="lead"></p>
     </header>
     <div class="container">
@@ -39,6 +46,7 @@
             <!-- scope is an attr that specifies whether its a header cell for a row column or group of rows or columns, in this case it is columns TODO: have it hidden in the css -->
             <th scope="col" class="colTitle">Time</th>
             <th scope="col" class="colTitle">Event</th>
+            <!-- add button here -->
             <th scope="col" class="colTitle">Add to Calendar</th>
           </tr>
         </thead>
@@ -49,13 +57,17 @@
             <th scope="row">9 AM</th>
             <!-- event input will be in this one below -->
             <td></td>
-            <td>Otto</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 10 am -->
             <th scope="row">10 AM</th>
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 11am -->
@@ -63,57 +75,73 @@
             <!-- <td colspan="2">Larry the Bird</td> -->
             <!-- input space for event -->
             <td></td>
-            <td>@twitter</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- noon -->
             <th scope="row">12 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- doing 24hr clock, so 1300, however, is there anyway to have the text show with the 12 hour clock numbers still?? -->
             <th scope="row">1 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 1400 -->
             <th scope="row">2 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 1500 -->
             <th scope="row">3 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 1600 -->
             <th scope="row">4 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
           <tr>
             <!-- 1700 -->
             <th scope="row">5 PM</th>
             <!-- input space for event -->
             <td></td>
-            <td>Thornton</td>
+            <td>
+              <!-- value spot needs to eventually be the little calendar icon -->
+              <input class="btn btn-primary" type="button" value="Input">
+            </td>
           </tr>
         </tbody>
       </table>
     </div>
 
+    <script src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="script.js"></script>
+    <!-- <script src="script.js"></script> -->
   </body>
 </html>
 
@@ -121,10 +149,10 @@
 <!-- the time blocks need to start at 9am, and end at 5pm. best way to make the transition from 12 pm to 1 pm would be to use a 24 hour clock. -->
 
 <!-- TODO: current day displayed at top of calendar-- so in the header? -->
-<!-- upon scroll down (scroll event?) presented with blocks by the hour from 9am to 5pm-- mostly sure I've done this now -->
+<!-- upon scroll down (scroll event?--no) presented with blocks by the hour from 9am to 5pm-- mostly sure I've done this now -->
 <!-- TODO: color code time blocks: past (grey), present(red), and future(green??? that isn't colorblind friendly. pick something else) -->
 <!-- TODO:  clicking a time block allows the user to input an event-->
-<!-- TODO: save events that are entered from user input in local storage, submit button? -->
+<!-- TODO: save events that are entered from user input in local storage, submit button--yes? -->
 <!-- TODO: events are still on the page when the page is refreshed -->
 
 <!-- TODO: we are prompted to use moment.js. here is the layout for formatted dates -----moment().format('MMM Do YYY, h:mm:ss a'); this one is, for example July 3rd, 2022, 10:40:46 pm-->
