@@ -3,8 +3,8 @@
 ## description
 This page is supposed to be a daily schedule builder/calendar for the working day hours. Those hours typically run from 9 AM to 5 PM, so those are the hours chosen for the scheduler. 
 
-![screenshot of first part of webpage](daily-scheduler\assets\images\webpage-snip.jpg)
-![screenshot of second part of webpage](daily-scheduler\assets\images\webpage-snip2.jpg)
+![webpage-snip](https://user-images.githubusercontent.com/104105172/177484632-77ba7d4f-043c-4c04-b1ec-10e1dd8055e9.jpg)
+![webpage-snip2](https://user-images.githubusercontent.com/104105172/177484635-7f4c7075-1a81-4cab-a047-de333e646120.jpg)
 
 ## table-of-contents
 
@@ -31,3 +31,5 @@ I really need to look further into my understanding of storage for my sites. Thi
 [Moment.js](https://momentjs.com/): Moment.js was used for the listed day with date at the top of the page, utilizing their formatting and standards.
 
 [Stack Overflow](https://stackoverflow.com/questions/34832401/saving-user-input-in-jquery):While I commonly end up not parsing much information from Stack Overflow, I was able to gather some information regarding my data storage problems.
+
+
