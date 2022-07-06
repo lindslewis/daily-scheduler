@@ -10,11 +10,15 @@ $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
 //or an event.handler (see form submittals are listed as an example of event.handlers)
 
 var userInput = document.getElementById("target")
-
+var saveButton = document.getElementsByClassName("btn");
 // how to store the user inputted data for the events, likely connect it to the button that is in the 3rd row each.....
 
-$( "#target" ).data( "test", "text");
-console.log()
+function saveEvent(){
+    saveButton.addEventListener("click", function(){
+        $(saveButton).data("addedEvents", userInput);
+    })
+localStorage.setItem("userInput",JSON.)
+}
 
 
 
