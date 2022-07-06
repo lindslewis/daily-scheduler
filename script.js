@@ -13,12 +13,35 @@ var userInput = document.getElementById("target")
 var saveButton = document.getElementsByClassName("btn");
 // how to store the user inputted data for the events, likely connect it to the button that is in the 3rd row each.....
 
-function saveEvent(){
-    saveButton.addEventListener("click", function(){
-        $(saveButton).data("addedEvents", userInput);
-    })
-localStorage.setItem("userInput",JSON.)
+// function saveEvent(){
+//     saveButton.addEventListener("click", function(){
+//         $(saveButton).data("addedEvents", userInput);
+//     })
+// localStorage.setItem("userInput",JSON.true)
+// }
+
+// saveButton.addEventListener("click", function()
+userInput.addEventListener("click",function(event){
+    var inputField = event.target;
+    console.log(userInput)
+
+    if(inputField.matches("#target")){
+        var state = inputField.getAttribute("#target.value");
+        $(userInput).data();
+    }
+})
+function saveData(){
+
+    var userEvent = userInput.value;
+        if (userInput === true){
+            document.getElementById("#target").innerHTML = userInput.value;
+            userInput.textContent = ("userInput.value")
+        }
+        
+    (localStorage.setItem(userEvent));
 }
+
+
 
 
 
