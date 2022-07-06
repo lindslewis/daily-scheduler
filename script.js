@@ -8,7 +8,7 @@ $("#currentDay").text(today.format("dddd, MMMM Do YYYY"));
 
 // might need event.result at some point for returning the value of an event (so the button added in the third column)
 //or an event.handler (see form submittals are listed as an example of event.handlers)
-
+var userInputPrompt = document.getElementById("target").value = "Enter your event here!";
 var userInput = document.getElementById("target")
 var saveButton = document.getElementsByClassName("btn");
 // how to store the user inputted data for the events, likely connect it to the button that is in the 3rd row each.....
@@ -37,9 +37,13 @@ function saveData(){
             document.getElementById("#target").innerHTML = userInput.value;
             userInput.textContent = ("userInput.value")
         }
-        
-    (localStorage.setItem(userEvent));
-}
+    saveButton.addEventListener("click", function(event){
+        (localStorage.setItem(userEvent));
+        console.log(userEvent)
+        console.log(event)
+    }
+)};   
+
 
 
 
