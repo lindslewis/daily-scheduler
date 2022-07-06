@@ -22,16 +22,16 @@ textarea {
 }
 
 /* every class listed below will likely go oin the current div with the class "container" */
-/* not yet in the html */
+/* not yet in the html where?*/
 .description {
   white-space: pre-wrap;
 }
-/* not yet in the html */
+/* not yet in the html where?*/
 .time-block {
   text-align: center;
   border-radius: 15px;
 }
-/* not yet in the html */
+
 .row {
   white-space: pre-wrap;
   height: 80px;
@@ -58,7 +58,7 @@ textarea {
   background-color: #77dd77;
   color: white;
 }
-/* not yet in the html */
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -66,7 +66,7 @@ textarea {
   background-color: #06aed5;
   color: white;
 }
-/* not yet in the html */
+
 .saveBtn i:hover {
   font-size: 20px;
   transition: all 0.3s ease-in-out;
