@@ -22,11 +22,11 @@ textarea {
 }
 
 /* every class listed below will likely go oin the current div with the class "container" */
-/* not yet in the html where?*/
+/* added them. looks like actual trash. so removing them. */
 .description {
   white-space: pre-wrap;
 }
-/* not yet in the html where?*/
+
 .time-block {
   text-align: center;
   border-radius: 15px;
