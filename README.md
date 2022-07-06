@@ -6,8 +6,7 @@ This page is supposed to be a daily schedule builder/calendar for the working da
 ## table-of-contents
 
 1. [usage](##usage)
-2. [composition]
-(##composition)
+2. [composition](##composition)
 3. [lessons-learned](##lessons-learned)
 4. [credits](##credits)
 
