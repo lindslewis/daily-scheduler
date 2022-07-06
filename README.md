@@ -3,6 +3,9 @@
 ## description
 This page is supposed to be a daily schedule builder/calendar for the working day hours. Those hours typically run from 9 AM to 5 PM, so those are the hours chosen for the scheduler. 
 
+![screenshot of first part of webpage](daily-scheduler\assets\images\webpage-snip.jpg)
+![screenshot of second part of webpage](daily-scheduler\assets\images\webpage-snip2.jpg)
+
 ## table-of-contents
 
 1. [usage](##usage)
